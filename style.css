@@ -12,6 +12,8 @@
   --background-before: #121214;
   --paragraph: #42d3ff;
   --background-form: #fafafc;
+
+  --line-separator: #e6e6f0;
 }
 
 body {
@@ -65,4 +67,22 @@ form {
   background-color: var(--background-form);
   border-radius: 0.8rem;
   min-height: 30rem;
+
+  padding: 6.4rem;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+
+  width: 100%;
+
+  border-bottom: 1px solid var(--line-separator);
+  padding-bottom: 1.6rem;
 }
