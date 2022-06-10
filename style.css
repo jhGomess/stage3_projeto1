@@ -12,13 +12,22 @@
   --background-before: #121214;
   --paragraph: #42d3ff;
   --background-form: #fafafc;
+  --label-color: #4e4958;
+  --span-color: #c1bccc;
 
   --line-separator: #e6e6f0;
 }
 
+body,
+input,
+button,
+select,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
 
   background-color: var(--background-body);
 }
@@ -52,6 +61,8 @@ header h1 {
   font-size: 3.6rem;
   line-height: 4.2rem;
   color: white;
+
+  margin-bottom: 2.4rem;
 }
 
 header p {
@@ -85,4 +96,42 @@ fieldset legend {
 
   border-bottom: 1px solid var(--line-separator);
   padding-bottom: 1.6rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  color: var(--label-color);
+
+  margin-bottom: 0.8rem;
+}
+
+.input-wrapper label span {
+  margin-left: 1.2rem;
+
+  font-size: 1.2rem;
+  line-height: 2rem;
+
+  color: var(--span-color);
+}
+
+.input-wrapper input {
+  background-color: var(--background-form);
+
+  border: 1px solid var(--line-separator);
+  border-radius: 0.8rem;
+
+  height: 5.6rem;
+  padding-inline: 2.4rem;
+
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+
+  color: var(--span-color);
 }
