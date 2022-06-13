@@ -13,7 +13,7 @@
   --paragraph: #42d3ff;
   --background-form: #fafafc;
   --label-color: #4e4958;
-  --span-color: #c1bccc;
+  --span-textInput: #c1bccc;
 
   --line-separator: #e6e6f0;
 }
@@ -75,6 +75,7 @@ header p {
 
 form {
   margin-top: 3.8rem;
+
   background-color: var(--background-form);
   border-radius: 0.8rem;
   min-height: 30rem;
@@ -84,6 +85,12 @@ form {
 
 fieldset {
   border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
 fieldset legend {
@@ -118,7 +125,7 @@ fieldset legend {
   font-size: 1.2rem;
   line-height: 2rem;
 
-  color: var(--span-color);
+  color: var(--span-textInput);
 }
 
 .input-wrapper input {
@@ -133,5 +140,5 @@ fieldset legend {
   font-size: 1.6rem;
   line-height: 2.6rem;
 
-  color: var(--span-color);
+  color: var(--span-textInput);
 }
