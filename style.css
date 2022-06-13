@@ -13,7 +13,8 @@
   --paragraph: #42d3ff;
   --background-form: #fafafc;
   --label-color: #4e4958;
-  --span-textInput: #c1bccc;
+  --span-color: #c1bccc;
+  --textInput-color: #6c6a71;
 
   --line-separator: #e6e6f0;
 }
@@ -125,10 +126,15 @@ fieldset legend {
   font-size: 1.2rem;
   line-height: 2rem;
 
-  color: var(--span-textInput);
+  color: var(--span-color);
 }
 
-.input-wrapper input {
+.input-wrapper label span:hover {
+  color: var(--textInput-color);
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
   background-color: var(--background-form);
 
   border: 1px solid var(--line-separator);
@@ -140,5 +146,10 @@ fieldset legend {
   font-size: 1.6rem;
   line-height: 2.6rem;
 
-  color: var(--span-textInput);
+  color: var(--textInput-color);
+}
+
+.input-wrapper textarea {
+  padding: 1rem;
+  height: 16.8rem;
 }
