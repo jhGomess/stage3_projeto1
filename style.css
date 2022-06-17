@@ -12,16 +12,19 @@
   --background-before: #121214;
   --paragraph: #42d3ff;
   --background-form: #fafafc;
+  --background-footer: #f0f0f4;
+  --background-button: #04d361;
+
   --label-color: #4e4958;
   --span-color: #c1bccc;
   --textInput-color: #6c6a71;
 
   --line-separator: #e6e6f0;
+  --line-footer: #d6d6d6;
 }
 
 body,
 input,
-button,
 select,
 textarea {
   font-family: "Poppins", sans-serif;
@@ -79,7 +82,7 @@ form {
   padding: 6.4rem;
 
   background-color: var(--background-form);
-  border-radius: 0.8rem;
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
   min-height: 30rem;
 
   display: flex;
@@ -216,4 +219,36 @@ fieldset legend {
 
 .col-3 > div:nth-child(1) {
   width: 100%;
+}
+
+footer {
+  background-color: var(--background-footer);
+  height: 13.6rem;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 4rem 6.4rem;
+  margin-bottom: 10rem;
+
+  border-top: 1px solid var(--line-footer);
+  border-radius: 0rem 0rem 0.8rem 0.8rem;
+}
+footer .button {
+  height: 5.6rem;
+
+  background-color: var(--background-button);
+  border-radius: 0.8rem;
+  border: none;
+
+  font-family: "Archivo", sans-serif;
+
+  color: white;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+footer .button:hover {
+  background-color: #14a857;
 }
